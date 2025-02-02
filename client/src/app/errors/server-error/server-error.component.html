@@ -1,0 +1,16 @@
+<div>
+    <h4>Server Error</h4>
+        @if (error) {
+        <h5 class="text-danger">Error: {{error.message}}</h5>
+        <p class="font-weight-bold">If you are seeing this error, this is the APIs fault</p>
+    }
+
+    <p class="font-weight-bold">Stack Trace</p>
+
+    <code class="mt-5" style="background: whitesmoke;">
+        {{error.details}}
+    </code>
+    <div class="mt-2">
+        <button class="btn btn-info btn-lg" routerLink="/">Return to home page</button>
+    </div>
+</div>
